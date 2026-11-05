@@ -11,7 +11,7 @@ function Tarjeta({ serie }: TarjetaProps) {
   const cadena = serie.network?.name ?? serie.webChannel?.name;
 
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200 transition-shadow hover:shadow-lg dark:bg-slate-900 dark:ring-slate-800">
+    <article className="group relative flex w-full flex-col overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200 transition-shadow hover:shadow-lg dark:bg-slate-900 dark:ring-slate-800">
       <Link
         to={`/explorar/${serie.id}`}
         className="flex flex-1 flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500"

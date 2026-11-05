@@ -1,12 +1,15 @@
+import type { ReactNode } from "react";
 import { Link } from "react-router";
 
 interface VacioProps {
   icono?: string;
   mensaje: string;
   enlace?: { texto: string; ruta: string };
+  // Acción extra opcional (por ejemplo, un botón para limpiar filtros)
+  children?: ReactNode;
 }
 
-function Vacio({ icono = "📭", mensaje, enlace }: VacioProps) {
+function Vacio({ icono = "📭", mensaje, enlace, children }: VacioProps) {
   return (
     <div
       className="flex flex-col items-center justify-center gap-3 py-20 text-center"
@@ -24,6 +27,7 @@ function Vacio({ icono = "📭", mensaje, enlace }: VacioProps) {
           {enlace.texto}
         </Link>
       )}
+      {children}
     </div>
   );
 }
