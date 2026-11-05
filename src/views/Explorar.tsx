@@ -5,6 +5,7 @@ import Tarjeta from "../components/Tarjeta";
 import Cargando from "../components/Cargando";
 import ErrorMensaje from "../components/ErrorMensaje";
 import Vacio from "../components/Vacio";
+import ModalNewsletter from "../components/ModalNewsletter";
 import { obtenerSeries } from "../services/tvmaze";
 import type { Serie } from "../types/serie";
 
@@ -201,6 +202,9 @@ function Explorar() {
         </div>
         {renderResultados()}
       </section>
+
+      {/* Modal con dark pattern intencional (ver comentario en el componente) */}
+      <ModalNewsletter />
     </>
   );
 }
