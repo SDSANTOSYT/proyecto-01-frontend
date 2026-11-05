@@ -5,6 +5,7 @@ function NotFound() {
 
   return (
     <section className="flex flex-col items-center px-4 py-24 text-center sm:py-32">
+      <title>Página no encontrada · SerieScope</title>
       <p
         className="bg-gradient-to-r from-cyan-500 to-sky-600 bg-clip-text text-8xl font-black text-transparent sm:text-9xl"
         aria-hidden="true"

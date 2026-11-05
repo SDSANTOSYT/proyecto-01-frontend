@@ -156,6 +156,7 @@ function Detalle() {
 
   return (
     <section className="mx-auto max-w-5xl px-4 py-10">
+      <title>{serie ? `${serie.name} · SerieScope` : "Detalle · SerieScope"}</title>
       <button
         type="button"
         onClick={volver}

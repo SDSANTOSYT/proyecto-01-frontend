@@ -136,6 +136,7 @@ function Explorar() {
 
   return (
     <>
+      <title>Explorar · SerieScope</title>
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-950 px-4 py-12 text-white">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-3xl font-extrabold sm:text-4xl">

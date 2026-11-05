@@ -82,6 +82,7 @@ function Contacto() {
 
   return (
     <section className="mx-auto max-w-xl px-4 py-10">
+      <title>Contacto · SerieScope</title>
       <h1 className="text-3xl font-bold">Contacto</h1>
       <p className="mt-1 text-slate-500 dark:text-slate-400">
         ¿Tienes preguntas o sugerencias? Envíanos un mensaje.

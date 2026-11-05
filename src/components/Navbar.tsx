@@ -66,12 +66,17 @@ function Navbar() {
               >
                 {enlace.texto}
                 {enlace.ruta === "/favoritos" && favoritos.length > 0 && (
-                  <span
-                    className="ml-1.5 rounded-full bg-cyan-500 px-1.5 py-0.5 text-xs font-bold text-slate-900"
-                    aria-label={`${favoritos.length} favoritos`}
-                  >
-                    {favoritos.length}
-                  </span>
+                  <>
+                    <span
+                      className="ml-1.5 rounded-full bg-cyan-500 px-1.5 py-0.5 text-xs font-bold text-slate-900"
+                      aria-hidden="true"
+                    >
+                      {favoritos.length}
+                    </span>
+                    <span className="sr-only">
+                      ({favoritos.length} guardados)
+                    </span>
+                  </>
                 )}
               </NavLink>
             </li>

@@ -21,6 +21,7 @@ const caracteristicas = [
 function Inicio() {
   return (
     <>
+      <title>Inicio · SerieScope</title>
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-950 text-white">
         <div className="mx-auto flex max-w-4xl flex-col items-center px-4 py-24 text-center sm:py-32">
           <p className="mb-4 rounded-full bg-cyan-500/10 px-4 py-1 text-sm font-medium text-cyan-300 ring-1 ring-cyan-500/30">
