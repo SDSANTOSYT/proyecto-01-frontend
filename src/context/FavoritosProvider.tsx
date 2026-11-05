@@ -42,9 +42,19 @@ function FavoritosProvider({ children }: FavoritosProviderProps) {
     setFavoritos((actuales) => actuales.filter((serie) => serie.id !== id));
   }
 
+  function vaciarFavoritos() {
+    setFavoritos([]);
+  }
+
   return (
     <FavoritosContext.Provider
-      value={{ favoritos, esFavorito, agregarFavorito, quitarFavorito }}
+      value={{
+        favoritos,
+        esFavorito,
+        agregarFavorito,
+        quitarFavorito,
+        vaciarFavoritos,
+      }}
     >
       {children}
     </FavoritosContext.Provider>

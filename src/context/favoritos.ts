@@ -6,6 +6,7 @@ export interface FavoritosContextValue {
   esFavorito: (id: number) => boolean;
   agregarFavorito: (serie: Serie) => void;
   quitarFavorito: (id: number) => void;
+  vaciarFavoritos: () => void;
 }
 
 export const FavoritosContext = createContext<FavoritosContextValue | null>(
