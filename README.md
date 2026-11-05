@@ -3,7 +3,7 @@
 Aplicación web (SPA) para explorar series de televisión, ver su detalle y guardar favoritas. Proyecto 01 del curso de Frontend.
 
 - **Repositorio:** https://github.com/SDSANTOSYT/proyecto-01-frontend
-- **Demo en Vercel:** _(agregar el enlace después del despliegue)_
+- **Demo en Vercel:** https://proyecto-01-frontend-sdsantos.vercel.app/
 
 ## API
 
