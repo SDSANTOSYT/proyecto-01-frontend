@@ -5,6 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explorador de Series</title>
+    <script>
+      // Aplica el tema antes de que cargue React para evitar un parpadeo
+      const tema = localStorage.getItem("tema");
+      const oscuro =
+        tema === "oscuro" ||
+        (!tema && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      document.documentElement.classList.toggle("dark", oscuro);
+    </script>
   </head>
   <body>
     <div id="root"></div>
