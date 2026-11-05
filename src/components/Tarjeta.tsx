@@ -58,7 +58,7 @@ function Tarjeta({ serie }: TarjetaProps) {
       </Link>
 
       {/* El botón queda fuera del Link para no anidar elementos interactivos */}
-      <div className="absolute top-2 right-2">
+      <div className="absolute top-2 right-2 z-10">
         <BotonFavorito serie={serie} />
       </div>
     </article>

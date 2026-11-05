@@ -44,10 +44,10 @@ function BotonFavorito({ serie, variante = "icono" }: BotonFavoritoProps) {
           aria-label={etiqueta}
           aria-pressed={guardada}
           title={etiqueta}
-          className={`flex h-10 w-10 items-center justify-center rounded-full text-xl shadow-md transition-transform hover:scale-110 ${
+          className={`flex h-10 w-10 items-center justify-center rounded-full text-xl shadow-md transition hover:scale-110 hover:shadow-lg active:scale-95 ${
             guardada
-              ? "bg-amber-400 text-white"
-              : "bg-white/90 text-slate-400 dark:bg-slate-800/90"
+              ? "bg-amber-400 text-white hover:bg-amber-500"
+              : "bg-white/90 text-slate-400 hover:bg-white hover:text-amber-400 dark:bg-slate-800/90 dark:hover:bg-slate-800"
           }`}
         >
           <span aria-hidden="true">★</span>

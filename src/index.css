@@ -2,3 +2,11 @@
 
 /* El modo oscuro se activa con la clase "dark" en <html> (toggle manual) */
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Tailwind v4 deja los botones con cursor por defecto: se recupera la manito */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
